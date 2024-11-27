@@ -7,39 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="top-bar">
-      <div class="social-icons">
-        <a href="#">f</a>
-        <a href="#">t</a>
-        <a href="#">@</a>
-        <a href="#">Be</a>
-      </div>
-      <div class="contact-info">
-        <span>+440 012 3654 896</span>
-        <span class="separator">support@colorlib.com</span>
-      </div>
-    </div>
-
-    <header class="header">
-      <a href="index.html" class="logo">
-        <div class="logo-icon"></div>
-        Magazine
-      </a>
-    </header>
-
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sports.html">Sports</a></li>
-        <li><a href="food.html">Food</a></li>
-        <li><a href="fashion.html" class="active">Fashion</a></li>
-        <li><a href="technology.html">Technology</a></li>
-        <li class="search-container">
-          <input type="text" class="search-input" placeholder="Search" />
-        </li>
-      </ul>
-    </nav>
-
+    <div id="header-container"></div>
     <main class="category-content">
       <div class="container">
         <h1 class="category-title">Fashion & Style</h1>
@@ -53,7 +21,7 @@
           <div class="post-overlay">
             <span class="category-tag">Fashion Week</span>
             <h2>
-              <a href="#" class="post-title"
+              <a href="article.html?id=1" class="post-title"
                 >Paris Fashion Week: Sustainable Fashion Takes Center Stage</a
               >
             </h2>
@@ -74,7 +42,7 @@
             />
             <span class="category-tag">Trends</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=2" class="post-title"
                 >Spring 2024: Colors and Patterns That Will Dominate</a
               >
             </h3>
@@ -92,7 +60,7 @@
             />
             <span class="category-tag">Designers</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=3" class="post-title"
                 >Emerging Designers Reshaping the Future of Fashion</a
               >
             </h3>
@@ -110,7 +78,7 @@
             />
             <span class="category-tag">Sustainability</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=4" class="post-title"
                 >Eco-Friendly Fashion: Brands Making a Difference</a
               >
             </h3>
@@ -128,7 +96,7 @@
             />
             <span class="category-tag">Accessories</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=5" class="post-title"
                 >Must-Have Accessories for the Spring Season</a
               >
             </h3>
@@ -141,50 +109,9 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>About Magazine</h3>
-          <p>
-            A digital publication dedicated to bringing you the latest news,
-            insights, and stories from around the world.
-          </p>
-        </div>
-
-        <div class="footer-section">
-          <h3>Website Creators</h3>
-          <ul class="team-list">
-            <li>Ayla Guliyeva</li>
-            <li>Anna Pylypenko</li>
-            <li>Anastasia Sobor</li>
-            <li>Yuta Ishii</li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <ul class="contact-list">
-            <li>Email: info@magazine.com</li>
-            <li>Support: support@magazine.com</li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Twitter</a>
-            <a href="#" class="social-link">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2024 Virtual Magazine. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="./js/index.js"></script>
-    <script src="search.js"></script>
+    <div id="footer-container"></div>
+    <script src="js/component.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>

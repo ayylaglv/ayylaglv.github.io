@@ -7,38 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="top-bar">
-      <div class="social-icons">
-        <a href="#">f</a>
-        <a href="#">t</a>
-        <a href="#">@</a>
-        <a href="#">Be</a>
-      </div>
-      <div class="contact-info">
-        <span>+440 012 3654 896</span>
-        <span class="separator">support@colorlib.com</span>
-      </div>
-    </div>
-
-    <header class="header">
-      <a href="index.html" class="logo">
-        <div class="logo-icon"></div>
-        Magazine
-      </a>
-    </header>
-
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sports.html">Sports</a></li>
-        <li><a href="food.html">Food</a></li>
-        <li><a href="fashion.html">Fashion</a></li>
-        <li><a href="technology.html" class="active">Technology</a></li>
-        <li class="search-container">
-          <input type="text" class="search-input" placeholder="Search" />
-        </li>
-      </ul>
-    </nav>
+    <div id="header-container"></div>
 
     <main class="category-content">
       <div class="container">
@@ -53,7 +22,7 @@
           <div class="post-overlay">
             <span class="category-tag">Tech News</span>
             <h2>
-              <a href="#" class="post-title"
+              <a href="article.html?id=1" class="post-title"
                 >Revolutionary AI Technology Transforms Healthcare Industry</a
               >
             </h2>
@@ -74,7 +43,7 @@
             />
             <span class="category-tag">Artificial Intelligence</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=2" class="post-title"
                 >New AI Model Breaks Records in Natural Language Processing</a
               >
             </h3>
@@ -96,7 +65,7 @@
             />
             <span class="category-tag">Cybersecurity</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=3" class="post-title"
                 >Major Tech Companies Unite to Combat Cyber Threats</a
               >
             </h3>
@@ -118,7 +87,7 @@
             />
             <span class="category-tag">Innovation</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=4" class="post-title"
                 >Breakthrough in Quantum Computing Reaches New Milestone</a
               >
             </h3>
@@ -140,7 +109,7 @@
             />
             <span class="category-tag">Gadgets</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=5" class="post-title"
                 >Next-Generation Smartphones Set to Redefine Mobile Computing</a
               >
             </h3>
@@ -162,7 +131,7 @@
             />
             <span class="category-tag">Green Tech</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=6" class="post-title"
                 >Sustainable Technology Innovations Lead Environmental Change</a
               >
             </h3>
@@ -184,7 +153,7 @@
             />
             <span class="category-tag">Space Tech</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=7" class="post-title"
                 >Private Space Companies Accelerate Mars Exploration Plans</a
               >
             </h3>
@@ -201,50 +170,10 @@
       </div>
     </main>
 
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>About Magazine</h3>
-          <p>
-            A digital publication dedicated to bringing you the latest news,
-            insights, and stories from around the world.
-          </p>
-        </div>
+    <div id="footer-container"></div>
 
-        <div class="footer-section">
-          <h3>Website Creators</h3>
-          <ul class="team-list">
-            <li>Ayla Guliyeva</li>
-            <li>Anna Pylypenko</li>
-            <li>Anastasia Sobor</li>
-            <li>Yuta Ishii</li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <ul class="contact-list">
-            <li>Email: info@magazine.com</li>
-            <li>Support: support@magazine.com</li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Twitter</a>
-            <a href="#" class="social-link">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2024 Virtual Magazine. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="./js/index.js"></script>
-    <script src="search.js"></script>
+    <script src="js/component.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>

@@ -7,38 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="top-bar">
-      <div class="social-icons">
-        <a href="#">f</a>
-        <a href="#">t</a>
-        <a href="#">@</a>
-        <a href="#">Be</a>
-      </div>
-      <div class="contact-info">
-        <span>+440 012 3654 896</span>
-        <span class="separator">support@colorlib.com</span>
-      </div>
-    </div>
-
-    <header class="header">
-      <a href="index.html" class="logo">
-        <div class="logo-icon"></div>
-        Magazine
-      </a>
-    </header>
-
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sports.html">Sports</a></li>
-        <li><a href="food.html" class="active">Food</a></li>
-        <li><a href="fashion.html">Fashion</a></li>
-        <li><a href="technology.html">Technology</a></li>
-        <li class="search-container">
-          <input type="text" class="search-input" placeholder="Search" />
-        </li>
-      </ul>
-    </nav>
+    <div id="header-container"></div>
 
     <main class="category-content">
       <div class="container">
@@ -53,7 +22,7 @@
           <div class="post-overlay">
             <span class="category-tag">Culinary Arts</span>
             <h2>
-              <a href="#" class="post-title"
+              <a href="article.html?id=1" class="post-title"
                 >Global Food Trends: The Rise of Plant-Based Cuisine</a
               >
             </h2>
@@ -74,7 +43,7 @@
             />
             <span class="category-tag">Restaurant Review</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=2" class="post-title"
                 >New Michelin Star Restaurants Announced for 2024</a
               >
             </h3>
@@ -92,7 +61,7 @@
             />
             <span class="category-tag">Healthy Eating</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=3" class="post-title"
                 >Mediterranean Diet Named Best for Third Year Running</a
               >
             </h3>
@@ -110,7 +79,7 @@
             />
             <span class="category-tag">Recipes</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=4" class="post-title"
                 >Chef's Special: Spring-Inspired Dishes to Try at Home</a
               >
             </h3>
@@ -128,7 +97,7 @@
             />
             <span class="category-tag">Food Culture</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=5" class="post-title"
                 >Traditional Cooking Methods Making a Modern Comeback</a
               >
             </h3>
@@ -140,50 +109,10 @@
         </div>
       </div>
     </main>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>About Magazine</h3>
-          <p>
-            A digital publication dedicated to bringing you the latest news,
-            insights, and stories from around the world.
-          </p>
-        </div>
+    <div id="footer-container"></div>
 
-        <div class="footer-section">
-          <h3>Website Creators</h3>
-          <ul class="team-list">
-            <li>Ayla Guliyeva</li>
-            <li>Anna Pylypenko</li>
-            <li>Anastasia Sobor</li>
-            <li>Yuta Ishii</li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <ul class="contact-list">
-            <li>Email: info@magazine.com</li>
-            <li>Support: support@magazine.com</li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Twitter</a>
-            <a href="#" class="social-link">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2024 Virtual Magazine. All rights reserved.</p>
-      </div>
-    </footer>
-
-    <script src="./js/index.js"></script>
-    <script src="search.js"></script>
+    <script src="js/component.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>

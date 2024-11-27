@@ -7,38 +7,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="top-bar">
-      <div class="social-icons">
-        <a href="#"><i class="fas fa-facebook">f</i></a>
-        <a href="#"><i class="fas fa-twitter">t</i></a>
-        <a href="#"><i class="fas fa-at">@</i></a>
-        <a href="#"><i class="fab fa-behance">Be</i></a>
-      </div>
-      <div class="contact-info">
-        <span>+440 012 3654 896</span>
-        <span class="separator">support@gmail.com</span>
-      </div>
-    </div>
-
-    <header class="header">
-      <a href="#" class="logo">Virtual Mag </a>
-    </header>
-
-    <nav class="nav-bar">
-      <ul>
-        <li><a href="index.html" class="active" id="home">Home</a></li>
-        <li><a href="sports.html" id="sports">Sports</a></li>
-        <li><a href="food.html" id="food">Food</a></li>
-        <li><a href="fashion.html" id="fashion">Fashion</a></li>
-        <li><a href="technology.html" id="technology">Technology</a></li>
-        <li class="search-container">
-          <form class="search-form">
-            <input type="text" class="search-input" placeholder="Search" />
-          </form>
-        </li>
-      </ul>
-    </nav>
-
+    <div id="header-container"></div>
     <main class="main-content">
       <div class="featured-post">
         Featured post
@@ -51,9 +20,11 @@
           <div class="post-overlay">
             <span class="category-tag">Lifestyle</span>
             <h2>
-              <a href="#" class="post-title"
-                >A Discount Toner Cartridge Is Better Than Ever.</a
-              >
+              <h2>
+                <a href="article.html?id=1" class="post-title"
+                  >A Discount Toner Cartridge Is Better Than Ever.</a
+                >
+              </h2>
             </h2>
             <div class="post-meta">
               <span>Mark wiens</span>
@@ -74,7 +45,7 @@
           <div class="post-overlay">
             <span class="category-tag">Technology</span>
             <h3>
-              <a href="#" class="post-title"
+              <a href="article.html?id=2" class="post-title"
                 >The Future of Mobile Technology: What's Next?</a
               >
             </h3>
@@ -94,9 +65,11 @@
           <div class="post-overlay">
             <span class="category-tag">Sports</span>
             <h3>
-              <a href="#" class="post-title"
-                >The Latest Updates from the World of Sports</a
-              >
+              <h3>
+                <a href="article.html?id=3" class="post-title"
+                  >The Latest Updates from the World of Sports</a
+                >
+              </h3>
             </h3>
             <div class="post-meta">
               <span>Mark wiens</span>
@@ -116,7 +89,7 @@
               />
               <div class="post-info">
                 <h3>
-                  <a href="#" class="post-title"
+                  <a href="article.html?id=4" class="post-title"
                     >The Latest Fashion Trends for Summer 2024</a
                   >
                 </h3>
@@ -135,7 +108,7 @@
               />
               <div class="post-info">
                 <h3>
-                  <a href="#" class="post-title"
+                  <a href="article.html?id=5" class="post-title"
                     >Top Music Albums Making Waves This Month</a
                   >
                 </h3>
@@ -154,7 +127,7 @@
               />
               <div class="post-info">
                 <h3>
-                  <a href="#" class="post-title"
+                  <a href="article.html?id=6" class="post-title"
                     >The Rise of Artificial Intelligence in Daily Life</a
                   >
                 </h3>
@@ -171,48 +144,9 @@
     </main>
 
     <script src="./js/index.js"></script>
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="footer-section">
-          <h3>About Magazine</h3>
-          <p>
-            A digital publication dedicated to bringing you the latest news,
-            insights, and stories from around the world.
-          </p>
-        </div>
-
-        <div class="footer-section">
-          <h3>Website Creators</h3>
-          <ul class="team-list">
-            <li>Ayla Guliyeva</li>
-            <li>Anna Pylypenko</li>
-            <li>Anastasia Sobor</li>
-            <li>Yuta Ishii</li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <ul class="contact-list">
-            <li>Email: info@magazine.com</li>
-            <li>Support: support@magazine.com</li>
-          </ul>
-        </div>
-
-        <div class="footer-section">
-          <h3>Follow Us</h3>
-          <div class="social-links">
-            <a href="#" class="social-link">Facebook</a>
-            <a href="#" class="social-link">Twitter</a>
-            <a href="#" class="social-link">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2024 Virtual Magazine. All rights reserved.</p>
-      </div>
-    </footer>
-    <script src="search.js"></script>
+    <div id="footer-container"></div>
+    <script src="js/component.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>
