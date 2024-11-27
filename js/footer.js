@@ -1,26 +1,25 @@
-// Add console.log to debug
-console.log("Footer.js loaded");
-
 document.addEventListener("DOMContentLoaded", function () {
-  insertFooter();
-});
-
-function insertFooter() {
   const footerContainer = document.getElementById("footer-container");
-  if (!footerContainer) {
-    console.error("Footer container not found");
-    return;
-  }
+  if (!footerContainer) return;
 
   const footerHTML = `
         <footer class="footer">
+            <div class="newsletter">
+                <div class="newsletter-content">
+                    <h3>Newsletter</h3>
+                    <p>Here, I focus on a range of items and features that we use in life without giving them a second thought.</p>
+                    <form class="newsletter-form" onsubmit="handleSubscribe(event)">
+                        <input type="email" placeholder="Email Address" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <small>You can unsubscribe us at any time</small>
+                </div>
+            </div>
+
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>About Magazine</h3>
-                    <p>
-                        A digital publication dedicated to bringing you the latest news,
-                        insights, and stories from around the world.
-                    </p>
+                    <p>A digital publication dedicated to bringing you the latest news, insights, and stories from around the world.</p>
                 </div>
 
                 <div class="footer-section">
@@ -52,10 +51,16 @@ function insertFooter() {
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; ${new Date().getFullYear()} Virtual Magazine. All rights reserved.</p>
+                <p>© ${new Date().getFullYear()} Virtual Magazine. All rights reserved.</p>
             </div>
         </footer>
     `;
 
   footerContainer.innerHTML = footerHTML;
+});
+
+function handleSubscribe(event) {
+  event.preventDefault();
+  alert("Subscribed successfully!");
+  event.target.reset();
 }
