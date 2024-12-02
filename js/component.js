@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
       
       <header class="header">
-          <a href="#" class="logo">Virtual Mag</a>
+          <a href="index.html" class="logo">Virtual Mag</a>
+          <div class="header-buttons">
+              <a href="login.html" class="header-btn login-btn">Login</a>
+          </div>
       </header>
       
       <nav class="nav-bar">
@@ -39,8 +42,14 @@ document.addEventListener("DOMContentLoaded", () => {
               <li><a href="technology.html" id="technology" class="${
                 currentPage === "technology" ? "active" : ""
               }">Technology</a></li>
+            <li><a href="subscribe.html" id="subscribe" class="${
+              currentPage === "subscribe" ? "active" : ""
+            }">Subscribe</a></li>
+            <li><a href="about.html" id="about" class="${
+              currentPage === "about" ? "active" : ""
+            }">About Us</a></li>
               <li class="search-container">
-                  <form class="search-form">
+                  <form class="search-form" onsubmit="handleSearch(event)">
                       <input type="text" class="search-input" placeholder="Search" />
                   </form>
               </li>

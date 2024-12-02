@@ -40,7 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
 function displayArticle(article) {
   document.getElementById("article-category").textContent = article.category;
   document.getElementById("article-title").textContent = article.title;
-  document.getElementById("article-author").textContent = article.author;
+  document.getElementById("article-author").innerHTML = `
+  <a href="author.html" class="author-link">${article.author}</a>
+`;
   document.getElementById("article-date").textContent = article.date;
   document.getElementById(
     "article-comments"

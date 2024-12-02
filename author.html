@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Author Profile - Virtual Mag</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="header-container"></div>
+    <main class="author-profile-content">
+      <div class="author-header">
+        <div class="author-info">
+          <img
+            src="https://picsum.photos/seed/author123/200/200"
+            alt="Mark Wein"
+            class="author-avatar"
+          />
+          <div class="author-details">
+            <h1 class="author-name">John Doe</h1>
+            <span class="author-role">Senior Editor</span>
+            <p class="author-bio">
+              Award-winning tech journalist with over a decade of experience
+              covering emerging technologies, digital trends, and consumer
+              electronics.
+            </p>
+            <div class="author-stats">
+              <div class="stat-item">
+                <span class="stat-number">156</span>
+                <span class="stat-label">Articles</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">42K</span>
+                <span class="stat-label">Readers</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">3.2K</span>
+                <span class="stat-label">Comments</span>
+              </div>
+            </div>
+            <div class="author-social">
+              <a href="#" class="social-button twitter">t</a>
+              <a href="#" class="social-button linkedin">in</a>
+              <a href="#" class="social-button">www</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="author-content">
+        <div class="author-articles">
+          <h2 class="section-title">Latest Articles</h2>
+          <div class="article-grid">
+            <!-- Articles will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script src="js/component.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Mock author data
+        const authorData = {
+          name: "John Doe",
+          role: "Senior Editor",
+          bio: "Award-winning tech journalist with over a decade of experience covering emerging technologies, digital trends, and consumer electronics.",
+          stats: {
+            articles: 156,
+            readers: "42K",
+            comments: "3.2K",
+          },
+          articles: [
+            {
+              title: "The Future of AI in Everyday Life",
+              excerpt:
+                "Exploring how artificial intelligence is reshaping our daily routines and what to expect in the coming years.",
+              date: "April 1, 2024",
+              image: "https://picsum.photos/400/300?random=2",
+            },
+            {
+              title: "5G Technology: A New Era of Connectivity",
+              excerpt:
+                "Understanding the impact of 5G networks on communication, business, and entertainment.",
+              date: "March 28, 2024",
+              image: "https://picsum.photos/400/300?random=3",
+            },
+            {
+              title: "Cybersecurity Best Practices for Remote Work",
+              excerpt:
+                "Essential security measures for protecting your data while working from home.",
+              date: "March 25, 2024",
+              image: "https://picsum.photos/400/300?random=4",
+            },
+            {
+              title: "The Rise of Quantum Computing",
+              excerpt:
+                "How quantum computers are revolutionizing complex problem-solving and data processing.",
+              date: "March 22, 2024",
+              image: "https://picsum.photos/400/300?random=5",
+            },
+            {
+              title: "Sustainable Tech: Green Innovation",
+              excerpt:
+                "Examining eco-friendly technologies and their role in combating climate change.",
+              date: "March 19, 2024",
+              image: "https://picsum.photos/400/300?random=6",
+            },
+            {
+              title: "Digital Privacy in the Modern Age",
+              excerpt:
+                "Protecting your personal information in an increasingly connected world.",
+              date: "March 16, 2024",
+              image: "https://picsum.photos/400/300?random=7",
+            },
+          ],
+        };
+
+        // Populate articles grid
+        const articleGrid = document.querySelector(".article-grid");
+        if (articleGrid) {
+          articleGrid.innerHTML = authorData.articles
+            .map(
+              (article) => `
+                    <article class="author-article">
+                        <img src="${article.image}" alt="${article.title}" class="article-image">
+                        <div class="article-content">
+                            <span class="article-date">${article.date}</span>
+                            <a href="article.html" class="article-title">${article.title}</a>
+                            <p class="article-excerpt">${article.excerpt}</p>
+                        </div>
+                    </article>
+                `
+            )
+            .join("");
+        }
+      });
+    </script>
+  </body>
+</html>
